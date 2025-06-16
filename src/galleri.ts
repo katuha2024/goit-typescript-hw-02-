@@ -8,7 +8,7 @@ const requestParams = {
     content_filter: 'high',
 };
 
-export default async function getUnsplashData(additionalParams) {
+export default async function getUnsplashData(additionalParams: Record<string, any>) {
     const response = await axios.get('https://api.unsplash.com/search/photos', {
         headers: {
             Authorization: `Client-ID ${ACCESS_KEY}`,
