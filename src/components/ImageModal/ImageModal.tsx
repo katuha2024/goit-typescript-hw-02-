@@ -7,25 +7,9 @@ import type { ImgData } from '../../types/index';
 
 Modal.setAppElement("#root");
 
-interface CurrentImgType {
-  alt_description: string;
-  description: string;
-  likes: number;
-  slug: string;
-  urls: {
-    regular: string;
-  };
-  user: {
-    name: string;
-  };
-  links: {
-    download: string;
-  };
-}
-
 interface ImageModalProps {
   onClose: () => void;
-  currentImg: CurrentImgType;
+  currentImg: ImgData;
   isOpen: boolean;
 }
 

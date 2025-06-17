@@ -4,27 +4,9 @@ import LoadMore from './LoadMore/LoadMore';
 import SearchBar from './SearchBar/SearchBar';
 import ImageModal from './ImageModal/ImageModal';
 import { PuffLoader } from 'react-spinners';
-import getUnsplashData from '../galleri';
+import { getUnsplashData } from '../galleri';
 import { ImgData } from '../../src/types/index';
 import { useState, useEffect } from 'react';
-
-// interface ImgData {
-//   id: string;
-//   alt_description: string;
-//   description: string;
-//   likes: number;
-//   slug: string;
-//   urls: {
-//     small: string;
-//     regular: string;
-//   };
-//   user: {
-//     name: string;
-//   };
-//   links: {
-//     download: string;
-//   };
-// }
 
 function App() {
   const [requestPhrase, setRequestPhrase] = useState<string>('');
